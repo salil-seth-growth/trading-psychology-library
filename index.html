@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Trader's Mind — Four Book Synthesis</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#0A0A0D;color:#E0DDD6;font-family:Georgia,serif}
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-thumb{background:#2A2A2E;border-radius:3px}
+    button{font-family:Georgia,serif;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Plain JS data — no Babel needed -->
+  <script src="data.js"></script>
+
+  <!-- React + ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel for JSX — only processes the small app.jsx file -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- App component — small JSX file Babel can handle -->
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
